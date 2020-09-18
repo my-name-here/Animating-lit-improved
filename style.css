@@ -151,3 +151,6 @@ so if you want to see where the boundaries of each are simply
     background-repeat: no-repeat;
   }
 }
+p {
+  display: inline;
+}
