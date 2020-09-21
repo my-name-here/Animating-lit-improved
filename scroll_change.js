@@ -12,13 +12,13 @@ window.onscroll = function change(){
     var distance = getScrollPercent()
     
     var current_page="poem.html";
-    if distance>=0 && distance<25{
+    if (distance>=0 && distance<25){
         var current_page="layer_1.html";}
-    if distance>=25 && distance<50{
+    if (distance>=25 && distance<50){
         var current_page="layer_2.html";}
-    if distance>=50 && distance<75{
+    if (distance>=50 && distance<75){
         var current_page="layer_3.html";}
-    if distance>=75 && distance<=100{
+    if (distance>=75 && distance<=100){
         var current_page="layer_4.html";}
     document.getElementById('the_poem').style.top=(height*(distance/100)).toString()+"px" ;
     document.getElementById('the_poem').src=current_page ;
