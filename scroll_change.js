@@ -6,7 +6,11 @@ function getScrollPercent() {
     return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 }
 window.onscroll = function change(){
+    height=document.body.scrollHeight;
+    
+    document.body.scrollHeight
     var distance = getScrollPercent()
+    
     var current_page="poem.html";
     if distance>=0 && distance<25{
         var current_page="layer_1.html";}
@@ -16,5 +20,6 @@ window.onscroll = function change(){
         var current_page="layer_3.html";}
     if distance>=75 && distance<=100{
         var current_page="layer_4.html";}
+    document.getElementById('the_poem').style.top=(height*(distance/100)).toString()+" px" ;
     document.getElementById('the_poem').src=current_page ;
 }
