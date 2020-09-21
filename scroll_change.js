@@ -23,3 +23,4 @@ window.onscroll = function change(){
     document.getElementById('the_poem').style.top=(height*(distance/100)).toString()+"px" ;
     document.getElementById('the_poem').src=current_page ;
 }
+ 
