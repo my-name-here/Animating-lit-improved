@@ -20,7 +20,7 @@ window.onscroll = function change(){
         var current_page="layer_3.html";}
     if (distance>=75 && distance<=100){
         var current_page="layer_4.html";}
-    //document.getElementById('the_poem').style.top=(height*(distance/100)).toString()+"px" ;
+    document.getElementById('the_poem').style.top=(height*getScrollPercent()).toString()+"px" ;
     document.getElementById('the_poem').src=current_page ;
 }
  
