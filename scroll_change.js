@@ -18,7 +18,7 @@ window.onscroll = function change(){
         var current_page="layer_2.html";}
     if (distance>=50 && distance<75){
         var current_page="layer_3.html";}
-    if (distance>=75 && distance<=100){
+    if (distance>=75){
         var current_page="layer_4.html";}
     //document.getElementById('the_poem').style.top=(10*(distance)).toString()+"px" ;
     document.getElementById('the_poem').src=current_page ;
