@@ -10,3 +10,6 @@ iframe{
   transform: translateX(-50%);
 }
 
+p{
+  opacity: .5;
+}
