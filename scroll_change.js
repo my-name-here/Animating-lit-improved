@@ -12,7 +12,7 @@ window.onscroll = function change(){
     var distance = getScrollPercent()
     
     var current_page="poem.html";
-    if (distance>=0 && distance<25){
+    if (distance>0 && distance<25){
         var current_page="layer_1.html";}
     if (distance>=25 && distance<50){
         var current_page="layer_2.html";}
