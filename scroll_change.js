@@ -6,9 +6,7 @@ function getScrollPercent() {
     return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 }
 window.onscroll = function change(){
-    height=document.body.scrollHeight;
-    
-    document.body.scrollHeight
+
     var distance = getScrollPercent()
     
     var current_page="poem.html";
